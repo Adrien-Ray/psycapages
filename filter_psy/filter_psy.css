@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 body .withback {
-  background-image: url("ubuntu-wallpaper-2560-1440.jpg");
+  background-image: url("./back.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
