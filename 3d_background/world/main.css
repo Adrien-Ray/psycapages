@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+}
+body canvas {
+  display: block;
+}
+body .fakebody {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+body .content {
+  color: rgb(255, 108, 108);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  border: 1px solid white;
+  font-family: sans-serif;
+}
+body .content a {
+  color: rgb(255, 154, 154);
+}/*# sourceMappingURL=main.css.map */

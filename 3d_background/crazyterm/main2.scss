@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow-y: hidden;
+    canvas {
+        display: block;
+    }
+    .fakebody {
+        position: absolute;
+        width: 100vw;
+        overflow-y: hidden;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+    .content {
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: monospace;
+        margin: 0;
+        height: 100vh;
+        max-height: 100vh;
+        overflow: hidden;
+        .content h1 {
+            text-align: center;
+        }
+    }
+}

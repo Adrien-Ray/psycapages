@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-y: hidden;
+}
+body canvas {
+  display: block;
+}
+body .fakebody {
+  position: absolute;
+  width: 100vw;
+  overflow-y: hidden;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+body .content {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: monospace;
+  margin: 0;
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+}
+body .content .content h1 {
+  text-align: center;
+}/*# sourceMappingURL=main2.css.map */
