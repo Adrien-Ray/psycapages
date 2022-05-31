@@ -61,11 +61,11 @@ animate()
 var getScroll;
 
 function repeatOften() {
-    cylinder.rotation.y += -0.005
+    cylinder.rotation.y += -0.01
 };
 
 function repeatOften2() {
-    cylinder.rotation.y += 0.005
+    cylinder.rotation.y += 0.01
 };
 
 document.getElementById("fakebody").addEventListener("scroll", function() {
