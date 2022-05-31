@@ -5,4 +5,9 @@ body .content {
 }
 body .content a {
   color: rgb(255, 193, 193);
+}
+body .content p,
+body .content h1,
+body .content h2 {
+  margin: 5rem 0;
 }/*# sourceMappingURL=style.css.map */
