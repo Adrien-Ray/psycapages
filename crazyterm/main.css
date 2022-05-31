@@ -1,0 +1,31 @@
+body {
+  background-color: rgb(31, 31, 31);
+  font-family: monospace;
+  color: white;
+}
+body p {
+  margin: 0;
+  padding: 0;
+}
+body p .invite {
+  font-weight: bold;
+  color: rgb(140, 192, 140);
+}
+body p .res_start {
+  min-width: 200px;
+}
+body p .green {
+  color: rgb(0, 255, 0);
+}
+body p .red {
+  color: red;
+}
+body p .blue {
+  color: rgb(110, 161, 255);
+}
+body p .yellow {
+  color: yellow;
+}
+body p .purple {
+  color: rgb(159, 86, 255);
+}/*# sourceMappingURL=main.css.map */

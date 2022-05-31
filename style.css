@@ -1,0 +1,49 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+  margin: 0;
+  padding: 1rem;
+}
+body * {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+body a:hover {
+  -webkit-animation-name: colorall;
+          animation-name: colorall;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+}
+body h1 {
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+}
+body ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+@-webkit-keyframes colorall {
+  from {
+    color: rgb(70, 255, 70);
+  }
+  to {
+    color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes colorall {
+  from {
+    color: rgb(70, 255, 70);
+  }
+  to {
+    color: rgb(255, 255, 255);
+  }
+}/*# sourceMappingURL=style.css.map */

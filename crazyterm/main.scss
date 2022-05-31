@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(31, 31, 31);
+    font-family: monospace;
+    color: white;
+    p {
+        margin: 0;
+        padding: 0;
+        .invite {
+            font-weight: bold;
+            color: rgb(140, 192, 140);
+        }
+        .res_start{
+            // font-weight: bold;
+            min-width: 200px;
+        }
+        .green{
+            color: rgb(0, 255, 0);
+        }
+        .red{
+            color: red;
+        }
+        .blue{
+            color: rgb(110, 161, 255);
+        }
+        .yellow{
+            color: yellow;
+        }
+        .purple{
+            color: rgb(159, 86, 255);
+        }
+    }
+}

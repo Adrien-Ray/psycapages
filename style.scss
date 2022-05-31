@@ -1,0 +1,36 @@
+html{
+    font-size:15px;
+}
+body{
+    background-color: rgb(34, 34, 34);
+    margin: 0;
+    padding: 1rem;
+    *{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
+    }
+    a{
+        &:hover{
+            animation-name: colorall;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 0.25s;
+        }
+    }
+    h1{
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+}
+@keyframes colorall {
+    from{
+        color: rgb(70, 255, 70);
+    }
+    to{
+        color: rgb(255, 255, 255);
+    }
+}

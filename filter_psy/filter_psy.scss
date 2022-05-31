@@ -1,0 +1,155 @@
+:root {
+    --psy__bull_blur: 200px;
+}
+
+body {
+    margin: 0;
+    .withback {
+        background-image: url('ubuntu-wallpaper-2560-1440.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+    }
+    div.psy {
+        height: 100vh;
+        box-sizing: border-box;
+        position: relative;
+        .psy__bull {
+            position: absolute;
+            top: var(--psy__bull_blur);
+            left: var(--psy__bull_blur);
+            width: 0;
+            height: 0;
+            background-color: transparent;
+            box-shadow: 0 0 var(--psy__bull_blur) var(--psy__bull_blur) rgba(255, 255, 255, 0.5);
+            animation-name: bull;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .psy__filter {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: var(--psy__bull_blur);
+            width: var(--psy__bull_blur);
+            border-radius: calc(var(--psy__bull_blur) / 2);
+            filter: brightness(150%);
+            animation-name: filtre;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .psy__filter2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: var(--psy__bull_blur);
+            width: var(--psy__bull_blur);
+            border-radius: calc(var(--psy__bull_blur) / 2);
+            filter: blur(20px);
+            animation-name: filtre;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .psy__filter3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: var(--psy__bull_blur);
+            width: var(--psy__bull_blur);
+            border-radius: calc(var(--psy__bull_blur) / 2);
+            filter: contrast(400%);
+            animation-name: filtre;
+            animation-duration: 18s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .psy__filter4 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: var(--psy__bull_blur);
+            width: var(--psy__bull_blur);
+            border-radius: calc(var(--psy__bull_blur) / 2);
+            filter: grayscale(100%);
+            animation-name: filtre;
+            animation-duration: 21s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .psy__filter5 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: var(--psy__bull_blur);
+            width: var(--psy__bull_blur);
+            border-radius: calc(var(--psy__bull_blur) / 2);
+            filter: hue-rotate(180deg);
+            animation-name: filtre;
+            animation-duration: 24s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        .psy__filter6 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: var(--psy__bull_blur);
+            width: var(--psy__bull_blur);
+            border-radius: calc(var(--psy__bull_blur) / 2);
+            filter: drop-shadow(16px 16px 20px transparent) invert(100%);
+            animation-name: filtre;
+            animation-duration: 27s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    }
+}
+
+@keyframes bull {
+    0% {
+        top: var(--psy__bull_blur);
+        left: var(--psy__bull_blur);
+    }
+    20% {
+        top: calc(100vh - var(--psy__bull_blur));
+        left: calc((100vw - var(--psy__bull_blur)) / 3);
+    }
+    40% {
+        top: var(--psy__bull_blur);
+        left: calc(((100vw - var(--psy__bull_blur)) / 3) * 2);
+    }
+    60% {
+        top: calc(100vh - var(--psy__bull_blur));
+        left: calc(100vw - var(--psy__bull_blur));
+    }
+    100% {
+        top: var(--psy__bull_blur);
+        left: var(--psy__bull_blur);
+    }
+}
+
+@keyframes filtre {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    20% {
+        top: calc(100vh - var(--psy__bull_blur));
+        left: calc((100vw - var(--psy__bull_blur)) / 3);
+    }
+    40% {
+        top: 0;
+        left: calc(((100vw - var(--psy__bull_blur)) / 3) * 2);
+    }
+    60% {
+        top: calc(100vh - var(--psy__bull_blur));
+        left: calc(100vw - var(--psy__bull_blur));
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}

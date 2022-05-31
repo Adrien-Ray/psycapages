@@ -1,0 +1,8 @@
+body .content {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+body .content a {
+  color: rgb(255, 193, 193);
+}/*# sourceMappingURL=style.css.map */

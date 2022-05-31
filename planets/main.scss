@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    background-color: black;
+    nav{
+    
+    }
+    section{
+        height: 50rem;
+        width:50rem;
+        background-color: rgb(0, 0, 0);
+        
+        background-size: cover;
+        border-radius: 50%;
+        position: relative;
+        margin: auto;
+        .sun{
+            width: 5rem;
+            height: 5rem;
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: calc(50% - 2.5rem);
+            left: calc(50% - 2.5rem);
+            box-shadow: inset 0 0 2.5rem 0.5rem orangered, inset 0 0 1rem 0 red, 0 0 5rem 2rem white;
+            animation-name: sun;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .orbitmercure{
+            width: 15rem;
+            height: 15rem;
+            border-radius: 50%;
+            border: .1rem dashed rgba(255, 255, 255, 0.1);
+            position: absolute;
+            top: calc(50% - 7.5rem);
+            left: calc(50% - 7.5rem);
+            animation-name: mercure;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            box-sizing: border-box;
+            .planetmercure{
+                width: 1rem;
+                height: 1rem;
+                background-color: rgb(116, 80, 56);
+                position: absolute;
+                left: calc(50% - 0.5rem);
+                top: -.5rem;
+                border-radius: 50%;
+                box-shadow: inset 0 .25rem .25rem 0 black, inset 0 0rem 0.25rem 0 white;
+            }
+        }
+        .orbitvenus{
+            width: 25rem;
+            height: 25rem;
+            border-radius: 50%;
+            border: .1rem dashed rgba(141, 127, 0, 0.3);
+            position: absolute;
+            top: calc(50% - 12.5rem);
+            left: calc(50% - 12.5rem);
+            animation-name: mercure;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            box-sizing: border-box;
+            .planetvenus{
+                width: 2rem;
+                height: 2rem;
+                background-color: rgb(141, 127, 0);
+                position: absolute;
+                left: calc(50% - 1rem);
+                top: -1rem;
+                border-radius: 50%;
+                box-shadow: inset 0 .5rem 0.5rem 0 black, inset 0 0rem 0.25rem 0 white;
+            }
+        }
+    }
+}
+@keyframes sun {
+    from{
+        box-shadow: inset 0 0 2.5rem 0.5rem orangered, inset 0 0 1rem 0 red, 0 0 5rem 2rem white;
+    }
+    to{
+        box-shadow: inset 0 0 2.5rem 0.5rem orangered, inset 0 0 0.5rem 0 red, 0 0 15rem 5rem white;
+    }
+}
+@keyframes mercure {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
