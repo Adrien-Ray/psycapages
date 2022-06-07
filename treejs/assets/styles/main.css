@@ -1,4 +1,6 @@
 body {
   margin: 0;
   overflow-y: hidden;
+  background: url(../img/back1.jpg) no-repeat center center;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */

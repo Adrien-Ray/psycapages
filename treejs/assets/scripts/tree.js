@@ -1,5 +1,5 @@
 const scene = new THREE.Scene()
-const renderer = new THREE.WebGLRenderer()
+const renderer = new THREE.WebGLRenderer({ alpha: true })
 const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerHeight, 0.1, 1000)
 
 // const geometry = new THREE.CylinderGeometry(5, 5, 20, 32)
@@ -41,6 +41,7 @@ camera.position.z = 25
 camera.rotation.x += 0
 camera.rotation.y += 0
 camera.rotation.z += 0
+cylinder.rotation.z = 0.5
 
 //Création de la lumière
 //Ambiante
@@ -55,13 +56,19 @@ scene.add(light);
 
 
 
+
+
+
+
+
+
 renderer.setSize(window.innerWidth, window.innerHeight)
 document.body.appendChild(renderer.domElement)
 
 function animate() {
-    cylinder.rotation.x += 0.001
-    cylinder.rotation.y += 0.001
-    cylinder.rotation.z += 0.001
+    cylinder.rotation.x += 0.00
+    cylinder.rotation.y += 0.005
+    cylinder.rotation.z += 0.00
     camera.rotation.z += 0.0
     renderer.render(scene, camera)
     requestAnimationFrame(animate)
