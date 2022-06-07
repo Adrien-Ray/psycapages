@@ -13,7 +13,7 @@ const geometry = new THREE.SphereGeometry(5, 64, 32);
 
 let material = new THREE.MeshPhongMaterial({
     color: 'rgb(0, 255, 149)', // red (can also use a CSS color string here)
-    opacity: 0.9,
+    opacity: 1,
     transparent: true,
     flatShading: true,
 });
