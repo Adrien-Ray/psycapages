@@ -14,6 +14,7 @@
         <li><a href="planets">planets</a></li>
         <li><a href="crazyterm">crazyTerm</a></li>
         <li><a href="3d_background">3d background</a></li>
+        <li><a href="treejs">treejs suite</a></li>
     </ul>
 </body>
 </html>
