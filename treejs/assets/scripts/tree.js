@@ -13,20 +13,20 @@ const geometry = new THREE.SphereGeometry(5, 64, 32);
 
 let material = new THREE.MeshPhongMaterial({
     color: 'rgb(0, 255, 149)', // red (can also use a CSS color string here)
-    opacity: 0.8,
+    opacity: 0.9,
     transparent: true,
     flatShading: true,
 });
 
 const cylinder = new THREE.Mesh(geometry, material)
-
-
+cylinder.castShadow = true; //default is false
+cylinder.receiveShadow = false;
 
 
 
 // wireframe
 var geo = new THREE.EdgesGeometry(cylinder.geometry); // or WireframeGeometry
-var mat = new THREE.LineBasicMaterial({ color: 'rgb(0, 255, 149)' });
+var mat = new THREE.LineBasicMaterial({ color: 'black' });
 var wireframe = new THREE.LineSegments(geo, mat);
 cylinder.add(wireframe);
 
@@ -45,11 +45,12 @@ cylinder.rotation.z = 0.5
 
 //Création de la lumière
 //Ambiante
-var light = new THREE.AmbientLight('rgb(255, 235, 124)');
+var light = new THREE.AmbientLight('black');
 scene.add(light);
 //Directionelle
-var light = new THREE.DirectionalLight(0xfdfcf0, 1);
+var light = new THREE.DirectionalLight('rgb(255, 235, 124)', 1);
 light.position.set(20, 10, 20);
+// light.castShadow = true;
 scene.add(light);
 
 
