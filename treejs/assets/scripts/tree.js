@@ -4,18 +4,21 @@ const camera = new THREE.PerspectiveCamera(40, window.innerWidth / window.innerH
 
 // const geometry = new THREE.CylinderGeometry(5, 5, 20, 32)
 // const geometry = new THREE.sphereGeometry(20, 8, 6);
-const geometry = new THREE.SphereGeometry(5, 64, 32);
+const geometry = new THREE.SphereBufferGeometry(5, 64, 32);
 
 /* const material = new THREE.MeshBasicMaterial({
     color: "red",
     wireframe: true,
 }) */
 
+const textureLoader = new THREE.TextureLoader();
+const texture = textureLoader.load('./assets/img/earth.jpg');
 let material = new THREE.MeshPhongMaterial({
-    color: 'rgb(0, 255, 149)', // red (can also use a CSS color string here)
+    // color: 'rgb(0, 255, 149)', // red (can also use a CSS color string here)
+    map: texture,
     opacity: 1,
     transparent: true,
-    flatShading: true,
+    //flatShading: true,
 });
 
 const cylinder = new THREE.Mesh(geometry, material)
@@ -25,10 +28,10 @@ cylinder.receiveShadow = false;
 
 
 // wireframe
-var geo = new THREE.EdgesGeometry(cylinder.geometry); // or WireframeGeometry
+/* var geo = new THREE.EdgesGeometry(cylinder.geometry); // or WireframeGeometry
 var mat = new THREE.LineBasicMaterial({ color: 'black' });
 var wireframe = new THREE.LineSegments(geo, mat);
-cylinder.add(wireframe);
+cylinder.add(wireframe); */
 
 
 
@@ -48,8 +51,8 @@ cylinder.rotation.z = 0.5
 var light = new THREE.AmbientLight('black');
 scene.add(light);
 //Directionelle
-var light = new THREE.DirectionalLight('rgb(255, 235, 124)', 1);
-light.position.set(20, 10, 20);
+var light = new THREE.DirectionalLight('rgb(255, 243, 176)', 3);
+light.position.set(30, 0, 10);
 // light.castShadow = true;
 scene.add(light);
 
