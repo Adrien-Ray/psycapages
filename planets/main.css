@@ -6,6 +6,7 @@
   --orbitVenus: 80%;
   --sizeVenus: 10%;
   --reverseSizeVenus: calc(var(--sizeVenus) - 2 * var(--sizeVenus));
+  --solarRadiationsTime: 3s;
 }
 
 body {
@@ -21,21 +22,20 @@ body section {
   background-size: cover;
   border-radius: 50%;
   position: relative;
-  border: 1px solid red;
 }
 body section .sun {
   width: var(--sunWidth);
   aspect-ratio: 1/1;
-  background-color: yellow;
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   position: absolute;
   top: calc(50% - var(--sunWidth) / 2);
   left: calc(50% - var(--sunWidth) / 2);
-  box-shadow: inset 0 0 calc(var(--sunWidth) / 2) calc(var(--sunWidth) / 10) orangered, inset 0 0 calc(var(--sunWidth) / 5) 0 red, 0 0 var(--sunWidth) calc(var(--sunWidth) / 5 * 2) white;
+  box-shadow: inset 0 0 20px red, inset 0 0 30px orangered, inset 0 0 40px yellow, 0 0 10rem rgba(255, 220, 200, 0.1);
   -webkit-animation-name: sun;
           animation-name: sun;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: var(--solarRadiationsTime);
+          animation-duration: var(--solarRadiationsTime);
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -46,8 +46,8 @@ body section .planetvenus {
   box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.8), inset 0 -5px 5px rgba(255, 255, 255, 0.8);
   -webkit-animation-name: albedoPlanets;
           animation-name: albedoPlanets;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: var(--solarRadiationsTime);
+          animation-duration: var(--solarRadiationsTime);
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -112,19 +112,19 @@ body section .orbitvenus .planetvenus {
 
 @-webkit-keyframes sun {
   from {
-    box-shadow: inset 0 0 2.5rem 0.5rem orangered, inset 0 0 1rem 0 red, 0 0 5rem 2rem white;
+    box-shadow: inset 0 0 20px red, inset 0 0 30px orangered, inset 0 0 40px yellow, 0 0 10rem 2rem rgba(255, 220, 200, 0.1);
   }
   to {
-    box-shadow: inset 0 0 2.5rem 0.5rem orangered, inset 0 0 0.5rem 0 red, 0 0 15rem 5rem white;
+    box-shadow: inset 0 0 20px red, inset 0 0 30px orangered, inset 0 0 40px yellow, 0 0 10rem 2rem rgb(255, 220, 200);
   }
 }
 
 @keyframes sun {
   from {
-    box-shadow: inset 0 0 2.5rem 0.5rem orangered, inset 0 0 1rem 0 red, 0 0 5rem 2rem white;
+    box-shadow: inset 0 0 20px red, inset 0 0 30px orangered, inset 0 0 40px yellow, 0 0 10rem 2rem rgba(255, 220, 200, 0.1);
   }
   to {
-    box-shadow: inset 0 0 2.5rem 0.5rem orangered, inset 0 0 0.5rem 0 red, 0 0 15rem 5rem white;
+    box-shadow: inset 0 0 20px red, inset 0 0 30px orangered, inset 0 0 40px yellow, 0 0 10rem 2rem rgb(255, 220, 200);
   }
 }
 @-webkit-keyframes mercure {
@@ -144,18 +144,18 @@ body section .orbitvenus .planetvenus {
   }
 }
 @-webkit-keyframes albedoPlanets {
-  from {
+  0% {
     box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.8), inset 0 -5px 5px rgba(255, 255, 255, 0.2);
   }
-  to {
+  100% {
     box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.8), inset 0 -5px 5px rgb(255, 255, 255);
   }
 }
 @keyframes albedoPlanets {
-  from {
+  0% {
     box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.8), inset 0 -5px 5px rgba(255, 255, 255, 0.2);
   }
-  to {
+  100% {
     box-shadow: inset 0 5px 5px rgba(0, 0, 0, 0.8), inset 0 -5px 5px rgb(255, 255, 255);
   }
 }/*# sourceMappingURL=main.css.map */
