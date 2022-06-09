@@ -9,9 +9,6 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <nav>
-
-    </nav>
     <section>
         <div class="sun"></div>
         <div class="orbitmercure">
