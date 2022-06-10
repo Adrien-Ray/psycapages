@@ -24,15 +24,20 @@ body section {
   position: relative;
   margin: auto;
 }
+body section .sun,
+body section .planetmercure,
+body section .planetvenus {
+  background-size: cover;
+}
 body section .sun {
   width: var(--sunWidth);
   aspect-ratio: 1/1;
   background-color: rgb(255, 255, 255);
+  background-image: url(./assets/img/sun.png);
   border-radius: 50%;
   position: absolute;
   top: calc(50% - var(--sunWidth) / 2);
   left: calc(50% - var(--sunWidth) / 2);
-  box-shadow: inset 0 0 20px red, inset 0 0 30px orangered, inset 0 0 40px yellow, 0 0 10rem rgba(255, 220, 200, 0.1);
   -webkit-animation-name: sun;
           animation-name: sun;
   -webkit-animation-duration: var(--solarRadiationsTime);
@@ -76,6 +81,7 @@ body section .orbitmercure .planetmercure {
   width: var(--sizeMercure);
   aspect-ratio: 1/1;
   background-color: rgb(116, 80, 56);
+  background-image: url(./assets/img/Mercure.png);
   position: absolute;
   left: calc(50% - var(--sizeMercure) / 2);
   top: calc(var(--reverseSizeMercure) / 2);
@@ -104,6 +110,7 @@ body section .orbitvenus .planetvenus {
   width: var(--sizeVenus);
   aspect-ratio: 1/1;
   background-color: rgb(141, 127, 0);
+  background-image: url(./assets/img/Venus.png);
   position: absolute;
   left: calc(50% - var(--sizeVenus) / 2);
   top: calc(var(--reverseSizeVenus) / 2);
@@ -113,19 +120,23 @@ body section .orbitvenus .planetvenus {
 
 @-webkit-keyframes sun {
   from {
-    box-shadow: inset 0 0 20px red, inset 0 0 30px orangered, inset 0 0 40px yellow, 0 0 10rem 2rem rgba(255, 220, 200, 0.1);
+    box-shadow: 0 0 10rem 2rem rgba(255, 220, 200, 0.1);
+    filter: brightness(0.7);
   }
   to {
-    box-shadow: inset 0 0 20px rgba(255, 0, 0, 0.5), inset 0 0 30px rgba(255, 68, 0, 0.5), inset 0 0 40px rgba(255, 255, 0, 0.5), 0 0 10rem 2rem rgb(255, 220, 200);
+    box-shadow: 0 0 10rem 2rem rgb(255, 220, 200);
+    filter: brightness(2);
   }
 }
 
 @keyframes sun {
   from {
-    box-shadow: inset 0 0 20px red, inset 0 0 30px orangered, inset 0 0 40px yellow, 0 0 10rem 2rem rgba(255, 220, 200, 0.1);
+    box-shadow: 0 0 10rem 2rem rgba(255, 220, 200, 0.1);
+    filter: brightness(0.7);
   }
   to {
-    box-shadow: inset 0 0 20px rgba(255, 0, 0, 0.5), inset 0 0 30px rgba(255, 68, 0, 0.5), inset 0 0 40px rgba(255, 255, 0, 0.5), 0 0 10rem 2rem rgb(255, 220, 200);
+    box-shadow: 0 0 10rem 2rem rgb(255, 220, 200);
+    filter: brightness(2);
   }
 }
 @-webkit-keyframes mercure {
