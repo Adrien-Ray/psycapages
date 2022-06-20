@@ -7,6 +7,7 @@
  - acclération (tours moteurs)
     - plus haut = plus de chauffe et plus d'essence
     - si vitesse = 1 calc avec accélération pour affichage compteur vitesse kmh
+    - au passage vitesse, si +1 alors -1000 tours, et inversement
 
 ## liste des composants
  - escence
