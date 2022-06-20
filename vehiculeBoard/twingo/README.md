@@ -19,3 +19,4 @@
     - 0, 1(point mort et avance)
     - manette et notation
     - compteur vitesse kmh
+    - compteur kilometrique
