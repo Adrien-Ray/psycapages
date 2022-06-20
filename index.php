@@ -15,6 +15,7 @@
         <li><a href="crazyterm">crazyTerm</a></li>
         <li><a href="3d_background">3d background</a></li>
         <li><a href="treejs">treejs suite</a></li>
+        <li><a href="./vehiculeBoard/twingo">vehiculeBoard twingo</a></li>
     </ul>
 </body>
 </html>
