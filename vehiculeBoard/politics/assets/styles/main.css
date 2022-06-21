@@ -1,0 +1,70 @@
+:root {
+  --lines: black;
+}
+
+body {
+  background-color: rgb(35, 35, 35);
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+body .jauge {
+  border: 1px solid var(--lines);
+  height: 30px;
+  width: 100%;
+  display: flex;
+}
+body .jauge > * {
+  height: 30px;
+}
+body .jauge.vertical {
+  height: 500px;
+  width: 100%;
+  align-items: flex-end;
+}
+body .jauge.vertical > * {
+  flex: 1;
+}
+body .jauge #left_ultra,
+body .jauge #left_ultra2 {
+  background-color: black;
+}
+body .jauge #left_extrem,
+body .jauge #left_extrem2 {
+  background-color: red;
+}
+body .jauge #left,
+body .jauge #left2 {
+  background-color: palevioletred;
+}
+body .jauge #center_left,
+body .jauge #center_left2 {
+  background-color: orangered;
+}
+body .jauge #center,
+body .jauge #center2 {
+  background-color: orange;
+}
+body .jauge #center_right,
+body .jauge #center_right2 {
+  background-color: rgb(255, 199, 94);
+}
+body .jauge #right,
+body .jauge #right2 {
+  background-color: rgb(55, 205, 255);
+}
+body .jauge #right_extrem,
+body .jauge #right_extrem2 {
+  background-color: blue;
+}
+body .jauge #right_ultra,
+body .jauge #right_ultra2 {
+  background-color: white;
+}
+body .actions {
+  display: flex;
+}
+body .actions > * {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--lines);
+}/*# sourceMappingURL=main.css.map */

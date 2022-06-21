@@ -1,0 +1,89 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../textures/cuir2.jpg');
+    background-position: center;
+    .haut,
+    .bas {
+        border: 1px solid red;
+        flex: 1;
+    }
+    .haut {
+        display: flex;
+        flex-direction: row;
+        .tableau,
+        .central {
+            border: 1px solid green;
+        }
+        .tableau {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .escence,
+            .tours {
+                display: flex;
+                flex-direction: column;
+                .jauge {
+                    width: 30px;
+                    height: 200px;
+                    min-height: 200px;
+                    max-height: 200px;
+                    border: 1px solid orange;
+                    background-color: rgb(53, 53, 53);
+                    flex: 1;
+                    margin-bottom: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    .niveau {
+                        background-color: orange;
+                    }
+                }
+                #alertEscence {
+                    background-image: url('../ico/gas-station.svg');
+                    background-size: contain;
+                }
+                #alertTours {
+                    background-image: url('../ico/alert.svg');
+                    background-size: contain;
+                }
+            }
+            .voyant {
+                height: 30px;
+                width: 30px;
+                border-radius: 30%;
+                background-color: rgb(44, 25, 0);
+                // background-color: rgb(255, 158, 31);
+            }
+        }
+        .central {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            .button {
+                width: 50px;
+                height: 60px;
+                background-color: rgb(70, 70, 70);
+                border: outset 3px black;
+                border-radius: 5px;
+                &#addescence {
+                    background-image: url('../ico/fuel.svg');
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                &#startstop {
+                    background-image: url('../ico/key.svg');
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}

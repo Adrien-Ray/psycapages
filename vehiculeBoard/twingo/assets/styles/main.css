@@ -1,0 +1,92 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../textures/cuir2.jpg");
+  background-position: center;
+}
+body .haut,
+body .bas {
+  border: 1px solid red;
+  flex: 1;
+}
+body .haut {
+  display: flex;
+  flex-direction: row;
+}
+body .haut .tableau,
+body .haut .central {
+  border: 1px solid green;
+}
+body .haut .tableau {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body .haut .tableau .escence,
+body .haut .tableau .tours {
+  display: flex;
+  flex-direction: column;
+}
+body .haut .tableau .escence .jauge,
+body .haut .tableau .tours .jauge {
+  width: 30px;
+  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  border: 1px solid orange;
+  background-color: rgb(53, 53, 53);
+  flex: 1;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+body .haut .tableau .escence .jauge .niveau,
+body .haut .tableau .tours .jauge .niveau {
+  background-color: orange;
+}
+body .haut .tableau .escence #alertEscence,
+body .haut .tableau .tours #alertEscence {
+  background-image: url("../ico/gas-station.svg");
+  background-size: contain;
+}
+body .haut .tableau .escence #alertTours,
+body .haut .tableau .tours #alertTours {
+  background-image: url("../ico/alert.svg");
+  background-size: contain;
+}
+body .haut .tableau .voyant {
+  height: 30px;
+  width: 30px;
+  border-radius: 30%;
+  background-color: rgb(44, 25, 0);
+}
+body .haut .central {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+body .haut .central .button {
+  width: 50px;
+  height: 60px;
+  background-color: rgb(70, 70, 70);
+  border: outset 3px black;
+  border-radius: 5px;
+}
+body .haut .central .button#addescence {
+  background-image: url("../ico/fuel.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body .haut .central .button#startstop {
+  background-image: url("../ico/key.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}/*# sourceMappingURL=main.css.map */
