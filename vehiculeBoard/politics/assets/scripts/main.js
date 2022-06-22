@@ -5,4 +5,4 @@ init();
 
 setInterval(() => {
     check();
-}, 200);
+}, 250);

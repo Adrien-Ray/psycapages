@@ -67,4 +67,11 @@ body .actions > * {
   flex: 1;
   padding: 10px;
   border: 1px solid var(--lines);
+}
+body .actions button {
+  width: 100%;
+  text-align: center;
+}
+body .actions p {
+  text-align: right;
 }/*# sourceMappingURL=main.css.map */
