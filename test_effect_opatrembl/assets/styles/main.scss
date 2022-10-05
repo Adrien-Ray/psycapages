@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    #test{
+        border: 1px solid red;
+        width: 50rem;
+        aspect-ratio: 1/1;
+        background-image: url(../img/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.png);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 100rem;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            opacity: 0;
+            transition: all .1s;
+            position: absolute;
+            left: -25rem;
+            top: -25rem;
+        }
+        &:hover{
+            img{
+                transition: all .7s;
+                animation-fill-mode: backwards;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear !important;
+                opacity: .02;
+                &:nth-child(1){
+                    animation-name: firstImg;
+                    animation-duration: 5s;
+                }
+                &:nth-child(2){
+                    animation-name: secImg;
+                    animation-duration: 7s;
+                }
+                &:nth-child(3){
+                    animation-name: troisImg;
+                    animation-duration: 9s;
+                }
+                &:nth-child(4){
+                    animation-name: quatrImg;
+                    animation-duration: 11s;
+                }
+            }
+        }
+    }
+}
+@keyframes firstImg {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes secImg {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes troisImg {
+    0%{
+        right: 0;
+        top: 0;
+    }
+    50%{
+        right: -50rem;
+        top: -50rem;
+    }
+    100%{
+        right: 0;
+        top: 0;
+    }
+}
+@keyframes quatrImg {
+    0%{
+        left: -50rem;
+        top: -50rem;
+    }
+    50%{
+        left: 0;
+        top: 0;
+    }
+    100%{
+        left: -50rem;
+        top: -50rem;
+    }
+}

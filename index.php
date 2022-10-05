@@ -15,6 +15,8 @@
         <li><a href="crazyterm">crazyTerm</a></li>
         <li><a href="3d_background">3d background</a></li>
         <li><a href="treejs">treejs suite</a></li>
+        <li><a href="test_effect_opa">test_effect_opa</a></li>
+        <li><a href="test_effect_opatrembl">test_effect_opatrembl</a></li>
     </ul>
 </body>
 </html>

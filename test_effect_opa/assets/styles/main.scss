@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    #test{
+        border: 1px solid black;
+        width: 50rem;
+        aspect-ratio: 1/1;
+        background-image: url(../img/ce5e0bb3-16b9-4d88-9bca-7d237fe725a8-cover.png);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        position: relative;
+        img{
+            width: 100rem;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            opacity: 0;
+            transition: all .5s;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &:hover{
+            img{
+                transition: all .5s;
+                opacity: .03;
+                animation-fill-mode: both;
+                animation-iteration-count: infinite;
+                &:nth-child(1){
+                    animation-name: firstImg;
+                    animation-duration: 17.5s;
+                }
+                &:nth-child(2){
+                    animation-name: secImg;
+                    animation-duration: 12.5s;
+                }
+                &:nth-child(3){
+                    animation-name: troisImg;
+                    animation-duration: 15s;
+                }
+                &:nth-child(4){
+                    animation-name: quatrImg;
+                    animation-duration: 10s;
+                }
+            }
+        }
+    }
+}
+@keyframes firstImg {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    50%{
+        left: -50rem;
+        top: -50rem;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+@keyframes secImg {
+    0%{
+        left: -50rem;
+        top: -50rem;
+    }
+    50%{
+        left: 0;
+        top: 0;
+    }
+    100%{
+        left: -50rem;
+        top: -50rem;
+    }
+}
+@keyframes troisImg {
+    0%{
+        right: 0;
+        top: 0;
+    }
+    50%{
+        right: -50rem;
+        top: -50rem;
+    }
+    100%{
+        right: 0;
+        top: 0;
+    }
+}
+@keyframes quatrImg {
+    0%{
+        left: 0;
+        top: 0;
+    }
+    50%{
+        left: -50rem;
+        top: -50rem;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
