@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+}
+body #grid > div {
+  display: flex;
+}
+body #grid > div > div {
+  width: 1rem;
+  aspect-ratio: 1/1;
+}
+body #grid > div > div.true {
+  background-color: black;
+}

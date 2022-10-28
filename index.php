@@ -17,6 +17,8 @@
         <li><a href="treejs">treejs suite</a></li>
         <li><a href="test_effect_opa">test_effect_opa</a></li>
         <li><a href="test_effect_opatrembl">test_effect_opatrembl</a></li>
+        <li><a href="test_automate_cell_1d">test_automate_cell_1d</a></li>
+        <li><a href="test_automate_cell_2d">test_automate_cell_2d</a></li>
     </ul>
 </body>
 </html>

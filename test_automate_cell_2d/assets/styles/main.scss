@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    #grid{
+        >div{
+            display: flex;
+            >div{
+                width: 1rem;
+                aspect-ratio: 1/1;
+                // border: 1px solid red;
+                &.true{
+                    background-color: black;
+                }
+            }
+        }
+    }
+}
