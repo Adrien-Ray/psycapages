@@ -1,0 +1,13 @@
+#etapes{
+    >div{
+        display: flex;
+        >div{
+            width: 1rem;
+            aspect-ratio: 1/1;
+            border: 1px solid rgb(255, 153, 0);
+            &.true{
+                background-color: black;
+            }
+        }
+    }
+}
