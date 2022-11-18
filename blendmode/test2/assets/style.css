@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: "Russo One", "cursive";
+}
+body .viewport {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://www.loic-perron-photo.fr/wp-content/uploads/2020/09/Z1A0480-HDR.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+body .viewport h1 {
+  display: inline-block;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 5rem;
+  mix-blend-mode: difference;
+  animation: move linear alternate infinite 5s;
+}
+
+@keyframes move {
+  to {
+    transform: translateX(0vw);
+  }
+  from {
+    transform: translateX(50vw);
+  }
+}
