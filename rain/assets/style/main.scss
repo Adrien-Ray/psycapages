@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    overflow: hidden;
+    .back{
+        height: 100vh;
+        background-color: black;
+    }
+    i{
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        animation: rainkey forwards linear;
+        position: absolute;
+        top: 0;
+    }
+}
+
+@keyframes rainkey {
+    from{
+        transform: translateY(0vh);
+    }
+    to{
+        transform: translateY(105vh);
+    }
+}
