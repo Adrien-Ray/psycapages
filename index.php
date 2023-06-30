@@ -21,6 +21,7 @@
         <li><a href="test_automate_cell_2d">test_automate_cell_2d</a></li>
         <li><a href="blendmode">test blendmode</a></li>
         <li><a href="rain">test rain</a></li>
+        <li><a href="leafletjs">test leafletjs</a></li>
     </ul>
 </body>
 </html>
