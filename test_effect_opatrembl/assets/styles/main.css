@@ -28,46 +28,26 @@ body #test img {
 }
 body #test:hover img {
   transition: all 0.7s;
-  -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear !important;
-          animation-timing-function: linear !important;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear !important;
   opacity: 0.02;
 }
 body #test:hover img:nth-child(1) {
-  -webkit-animation-name: firstImg;
-          animation-name: firstImg;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-name: firstImg;
+  animation-duration: 5s;
 }
 body #test:hover img:nth-child(2) {
-  -webkit-animation-name: secImg;
-          animation-name: secImg;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  animation-name: secImg;
+  animation-duration: 7s;
 }
 body #test:hover img:nth-child(3) {
-  -webkit-animation-name: troisImg;
-          animation-name: troisImg;
-  -webkit-animation-duration: 9s;
-          animation-duration: 9s;
+  animation-name: troisImg;
+  animation-duration: 9s;
 }
 body #test:hover img:nth-child(4) {
-  -webkit-animation-name: quatrImg;
-          animation-name: quatrImg;
-  -webkit-animation-duration: 11s;
-          animation-duration: 11s;
-}
-
-@-webkit-keyframes firstImg {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  animation-name: quatrImg;
+  animation-duration: 11s;
 }
 
 @keyframes firstImg {
@@ -78,34 +58,12 @@ body #test:hover img:nth-child(4) {
     transform: rotate(360deg);
   }
 }
-@-webkit-keyframes secImg {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
-  }
-}
 @keyframes secImg {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(-360deg);
-  }
-}
-@-webkit-keyframes troisImg {
-  0% {
-    right: 0;
-    top: 0;
-  }
-  50% {
-    right: -50rem;
-    top: -50rem;
-  }
-  100% {
-    right: 0;
-    top: 0;
   }
 }
 @keyframes troisImg {
@@ -122,20 +80,6 @@ body #test:hover img:nth-child(4) {
     top: 0;
   }
 }
-@-webkit-keyframes quatrImg {
-  0% {
-    left: -50rem;
-    top: -50rem;
-  }
-  50% {
-    left: 0;
-    top: 0;
-  }
-  100% {
-    left: -50rem;
-    top: -50rem;
-  }
-}
 @keyframes quatrImg {
   0% {
     left: -50rem;
@@ -149,4 +93,4 @@ body #test:hover img:nth-child(4) {
     left: -50rem;
     top: -50rem;
   }
-}
+}/*# sourceMappingURL=main.css.map */

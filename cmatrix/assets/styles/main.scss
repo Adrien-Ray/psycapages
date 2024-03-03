@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'japan'; /* Nom de la police */
+    src: url('../fonts/NotoSansJP-VariableFont_wght.ttf') format('truetype'); /* Chemin vers le fichier TTF */
+}
+
+:root{
+    --color: rgb(21, 255, 21);
+    --backColor: black;
+    --backColorTransparent: rgba(0,0,0,0.2);
+}
+html {
+}
+body {
+    margin: 0;
+    height: 100vh;
+    .cmatrix {
+        font-family: 'japan', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        height: 100%;
+        background-color: var(--backColor);
+        color: var(--color);
+        .cmatrix__tr {
+            display: flex;
+            .cmatrix__td {
+                width: 30px;
+                height: 30px;
+                background-color: transparent;
+                transition: all ease-in-out 1s;
+                &:hover{
+                    background-color: var(--color);
+                    transition: all ease-in-out 0s;
+                }
+            }
+        }
+    }
+}
