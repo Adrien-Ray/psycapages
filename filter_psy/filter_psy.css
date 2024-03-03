@@ -24,14 +24,10 @@ body div.psy .psy__bull {
   height: 0;
   background-color: transparent;
   box-shadow: 0 0 var(--psy__bull_blur) var(--psy__bull_blur) rgba(255, 255, 255, 0.5);
-  -webkit-animation-name: bull;
-          animation-name: bull;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: bull;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 body div.psy .psy__filter {
   position: absolute;
@@ -41,14 +37,10 @@ body div.psy .psy__filter {
   width: var(--psy__bull_blur);
   border-radius: calc(var(--psy__bull_blur) / 2);
   filter: brightness(150%);
-  -webkit-animation-name: filtre;
-          animation-name: filtre;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: filtre;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 body div.psy .psy__filter2 {
   position: absolute;
@@ -58,14 +50,10 @@ body div.psy .psy__filter2 {
   width: var(--psy__bull_blur);
   border-radius: calc(var(--psy__bull_blur) / 2);
   filter: blur(20px);
-  -webkit-animation-name: filtre;
-          animation-name: filtre;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: filtre;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 body div.psy .psy__filter3 {
   position: absolute;
@@ -75,14 +63,10 @@ body div.psy .psy__filter3 {
   width: var(--psy__bull_blur);
   border-radius: calc(var(--psy__bull_blur) / 2);
   filter: contrast(400%);
-  -webkit-animation-name: filtre;
-          animation-name: filtre;
-  -webkit-animation-duration: 18s;
-          animation-duration: 18s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: filtre;
+  animation-duration: 18s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 body div.psy .psy__filter4 {
   position: absolute;
@@ -92,14 +76,10 @@ body div.psy .psy__filter4 {
   width: var(--psy__bull_blur);
   border-radius: calc(var(--psy__bull_blur) / 2);
   filter: grayscale(100%);
-  -webkit-animation-name: filtre;
-          animation-name: filtre;
-  -webkit-animation-duration: 21s;
-          animation-duration: 21s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: filtre;
+  animation-duration: 21s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 body div.psy .psy__filter5 {
   position: absolute;
@@ -109,14 +89,10 @@ body div.psy .psy__filter5 {
   width: var(--psy__bull_blur);
   border-radius: calc(var(--psy__bull_blur) / 2);
   filter: hue-rotate(180deg);
-  -webkit-animation-name: filtre;
-          animation-name: filtre;
-  -webkit-animation-duration: 24s;
-          animation-duration: 24s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-name: filtre;
+  animation-duration: 24s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 body div.psy .psy__filter6 {
   position: absolute;
@@ -126,37 +102,10 @@ body div.psy .psy__filter6 {
   width: var(--psy__bull_blur);
   border-radius: calc(var(--psy__bull_blur) / 2);
   filter: drop-shadow(16px 16px 20px transparent) invert(100%);
-  -webkit-animation-name: filtre;
-          animation-name: filtre;
-  -webkit-animation-duration: 27s;
-          animation-duration: 27s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-}
-
-@-webkit-keyframes bull {
-  0% {
-    top: var(--psy__bull_blur);
-    left: var(--psy__bull_blur);
-  }
-  20% {
-    top: calc(100vh - var(--psy__bull_blur));
-    left: calc((100vw - var(--psy__bull_blur)) / 3);
-  }
-  40% {
-    top: var(--psy__bull_blur);
-    left: calc((100vw - var(--psy__bull_blur)) / 3 * 2);
-  }
-  60% {
-    top: calc(100vh - var(--psy__bull_blur));
-    left: calc(100vw - var(--psy__bull_blur));
-  }
-  100% {
-    top: var(--psy__bull_blur);
-    left: var(--psy__bull_blur);
-  }
+  animation-name: filtre;
+  animation-duration: 27s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 @keyframes bull {
@@ -181,28 +130,6 @@ body div.psy .psy__filter6 {
     left: var(--psy__bull_blur);
   }
 }
-@-webkit-keyframes filtre {
-  0% {
-    top: 0;
-    left: 0;
-  }
-  20% {
-    top: calc(100vh - var(--psy__bull_blur));
-    left: calc((100vw - var(--psy__bull_blur)) / 3);
-  }
-  40% {
-    top: 0;
-    left: calc((100vw - var(--psy__bull_blur)) / 3 * 2);
-  }
-  60% {
-    top: calc(100vh - var(--psy__bull_blur));
-    left: calc(100vw - var(--psy__bull_blur));
-  }
-  100% {
-    top: 0;
-    left: 0;
-  }
-}
 @keyframes filtre {
   0% {
     top: 0;
@@ -224,4 +151,4 @@ body div.psy .psy__filter6 {
     top: 0;
     left: 0;
   }
-}
+}/*# sourceMappingURL=filter_psy.css.map */
