@@ -77,6 +77,7 @@ function processStep(row, col) {
 }
 
 function process(randomIndex) {
+    const speedIteration = Math.floor(Math.random() * (200 - 50 + 1)) + 50;
     let count = 0;
     let processStepInterval = setInterval(() => {
         processStep(count, randomIndex);
@@ -85,7 +86,7 @@ function process(randomIndex) {
             clearInterval(processStepInterval);
             return;
         }
-    }, 80);
+    }, speedIteration);
 }
 
 function randomStartProcess() {
@@ -97,7 +98,7 @@ function randomStartProcess() {
 setTimeout(() => {
     setInterval(() => {
         randomStartProcess();
-    }, 100);
+    }, 200);
 }, 1000);
 
 console.log(document.querySelector('.cmatrix'));
