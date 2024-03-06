@@ -85,7 +85,7 @@ function process(randomIndex) {
             clearInterval(processStepInterval);
             return;
         }
-    }, 50);
+    }, 80);
 }
 
 function randomStartProcess() {
@@ -94,8 +94,10 @@ function randomStartProcess() {
     return;
 }
 
-setInterval(() => {
-    randomStartProcess();
-}, 100);
+setTimeout(() => {
+    setInterval(() => {
+        randomStartProcess();
+    }, 100);
+}, 1000);
 
 console.log(document.querySelector('.cmatrix'));
