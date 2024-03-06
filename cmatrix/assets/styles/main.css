@@ -26,10 +26,10 @@ body .cmatrix .cmatrix__tr {
 body .cmatrix .cmatrix__tr .cmatrix__td {
   width: 30px;
   height: 30px;
-  background-color: transparent;
-  transition: all ease-in-out 1s;
+  color: transparent;
+  transition: all ease-in-out 2s;
 }
-body .cmatrix .cmatrix__tr .cmatrix__td:hover {
-  background-color: var(--color);
+body .cmatrix .cmatrix__tr .cmatrix__td:hover, body .cmatrix .cmatrix__tr .cmatrix__td.light {
+  color: var(--color);
   transition: all ease-in-out 0s;
 }/*# sourceMappingURL=main.css.map */
